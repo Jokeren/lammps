@@ -32,6 +32,7 @@ class AtomVecAtomicKokkos : public AtomVecKokkos {
   AtomVecAtomicKokkos(class LAMMPS *);
   virtual ~AtomVecAtomicKokkos() {}
   void grow(int);
+  void grow_cache(int, float);
   void copy(int, int, int);
   int pack_border(int, int *, double *, int, int *);
   int pack_border_vel(int, int *, double *, int, int *);
